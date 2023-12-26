@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberTech</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/animate.css/animate.min.css">
+  <script src="https://unpkg.com/gsap@3.9.2"></script>
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+    }
+
+    header {
+      background-color: #333;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #000;
+      padding: 10px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      margin: 0 10px;
+    }
+
+    .dropdown {
+      display: inline-block;
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #000;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    section {
+      padding: 40px;
+    }
+
+    .photos {
+      background-color: #111;
+      border-radius: 10px;
+      padding: 40px;
+      margin-top: 40px;
+    }
+
+    .videos {
+      background-color: #222;
+      border-radius: 10px;
+      padding: 40px;
+      margin-top: 40px;
+    }
+
+    .contact-info {
+      background-color: #111;
+      border-radius: 10px;
+      padding: 40px;
+      margin-top: 40px;
+    }
+
+    footer {
+      background-color: #333;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    /* Responsive layout */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="animate__animated animate__bounceInDown">CyberTech</h1>
+  </header>
+
+  <nav class="animate__animated animate__fadeIn">
+    <a href="#">Home</a>
+    <a href="upload.html">Photos</a>
+    <a href="#">Videos</a>
+    <div class="dropdown">
+      <a href="#">Services</a>
+      <div class="dropdown-content">
+        <a href="#">Web Development</a>
+        <a href="#">Cybersecurity</a>
+        <a href="#">AI & Machine Learning</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#">Contact</a>
+      <div class="dropdown-content">
+        <p>Email: contact@cybertech.com</p>
+        <p>Phone: +1 (555) 123-4567</p>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <h2 class="animate__animated animate__fadeIn">Welcome to CyberTech</h2>
+    <p class="animate__animated animate__fadeIn">Exploring the future of technology with innovation and security.</p>
+  </section>
+
+  <section id="photos" class="photos animate__animated animate__fadeIn">
+    <h2>Explore Photos</h2>
+    <!-- Add spaces for photos -->
+  </section>
+
+  <section id="videos" class="videos animate__animated animate__fadeIn">
+    <h2>Watch Our Videos</h2>
+    <!-- Add spaces for videos -->
+  </section>
+
+  <section id="contact-info" class="contact-info animate__animated animate__fadeIn">
+    <h2>Contact Information</h2>
+    <p>Email: contact@cybertech.com</p>
+    <p>Phone: +1 (555) 123-4567</p>
+  </section>
+
+  <footer>
+    <p class="animate__animated animate__fadeIn">&copy; 2023 CyberTech. All rights reserved.</p>
+  </footer>
+
+  <script>
+    gsap.from(".animate__fadeIn", { opacity: 0, duration: 1, stagger: 0.2 });
+    gsap.from(".animate__bounceInDown", { opacity: 0, duration: 1, delay: 0.5, y: -50 });
+  </script>
+
+</body>
+</html>
